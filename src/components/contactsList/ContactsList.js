@@ -9,7 +9,8 @@ export default class ContactsList extends Component {
         super(props)
         
         this.state = {
-            contactsArray: contactsMoqArray()
+            contactsArray: contactsMoqArray(),
+            searchedArray: contactsMoqArray()
         }
     }
 
@@ -22,13 +23,23 @@ export default class ContactsList extends Component {
         });
     }
 
+    handleSearch = (text) => {
+        var filteredArray = this.state.contactsArray.filter(element => element.name.toLowerCase().includes(text.toLowerCase()) 
+                                                                    || element.surname.toLowerCase().includes(text.toLowerCase()))
+
+        this.setState({
+            searchedArray: filteredArray
+        })
+    }
+
     render() {
-        const { contactsArray } = this.state;
+        const { searchedArray } = this.state;
 
         return (
             <div className="contacts">
+                <input style={{width:"415px"}} onChange={(e) => this.handleSearch(e.target.value)}/>
                 <div className="contactsList">
-                    {contactsArray.map((element, id) => (
+                    {searchedArray.map((element, id) => (
                         <Contact 
                             name={element.name}
                             surname={element.surname}
