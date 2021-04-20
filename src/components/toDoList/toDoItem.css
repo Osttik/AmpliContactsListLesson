@@ -1,0 +1,52 @@
+.toDoComponent {
+    display: flex;
+    margin: 7px;
+    background-color: white;
+    color: black;
+    width: 400px;
+
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 9px 6px rgb(0 0 0 / 50%);
+}
+
+.toDoContent{
+    display: flex;
+}
+
+.toDoText{
+    width: 340px;
+}
+
+.button{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.deleteButtonImage{
+    width: 25px;
+}
+
+.doneElement{
+    text-decoration: line-through;
+}
+
+.standartCheck{
+    fill:#67daf9;
+}
+
+.doneCheck{
+    fill: #fc0d1b;
+}
+
+.standartText{
+    color: #67daf9;
+    font-size: larger;
+    text-align: start;
+}
+
+.doneText{
+    color:#fc0d1b;
+    font-size: larger;
+    text-align: start;
+}

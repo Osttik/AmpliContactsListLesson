@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 
-export default class Header extends Component {
+export default function Header(){
 
-    render() {
 
-        return (
-            <div style={{backgroundColor:"blue", fontSize: "40px", fontWeight: "bold", marginBottom: "10px"}}>
-                Header
-            </div>
-        )
-    }
+    return (
+        <div style={{color:"#67daf9", fontSize: "40px", fontWeight: "bold", marginBottom: "10px"}}>
+            Todo List
+        </div>
+    )
+    
 }

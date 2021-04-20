@@ -1,10 +1,10 @@
-.contactsList{
+.tasksList{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.contacts{
+.tasks{
     /*Fixed size to header and footer, rewrite)*/
     height: calc(100vh - 126px);
     overflow: hidden;
