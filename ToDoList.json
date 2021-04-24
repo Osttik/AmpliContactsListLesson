@@ -1,9 +1,5 @@
 {
-    "array": [
-        {
-            "toDoText": "Do something",
-            "done": "false"
-        },{
+    "array": [{
             "toDoText": "Do something",
             "done": "false"
         },{
