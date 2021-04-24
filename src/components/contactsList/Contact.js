@@ -5,7 +5,7 @@ import './contact.css';
 
 export default class Contact extends Component {
 
-    formatData = (date) => {
+    formatDate = (date) => {
         const formattedDate = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2)
         return formattedDate
     }
@@ -29,7 +29,7 @@ export default class Contact extends Component {
                     </div>
                 </div>
                 <div className="lastTime">
-                    {this.formatData(lastVisitTime)}
+                    {this.formatDate(lastVisitTime)}
                 </div>
                 <button className="deleteButton" onClick={() => this.props.deleteContact(this.props.id)}>
                     <img className="deleteButtonImage" src={deleteButtonSVG}/>

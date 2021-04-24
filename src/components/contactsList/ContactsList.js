@@ -16,6 +16,7 @@ export default class ContactsList extends Component {
 
     deleteContact = (contactId) => {
         const {contactsArray} = this.state
+        
         contactsArray.splice(contactId, 1)
 
         this.setState({
