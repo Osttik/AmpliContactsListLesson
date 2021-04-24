@@ -11,8 +11,30 @@
     overflow-y: scroll;
 }
 
+.cardCreateInput{
+  box-sizing: border-box;
+  width: 360px;
+  margin-right: 10px;
+  height: 26px;
+}
+
+.addButton{
+  background-color: white !important;
+  height: 26px;
+}
+
+.createCardControll{
+  height: 30px;
+  padding: 5px;
+}
+
+.borderedElement{
+  border: 1px solid;
+  border-radius: 3px;
+}
+
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
   
 ::-webkit-scrollbar-track {

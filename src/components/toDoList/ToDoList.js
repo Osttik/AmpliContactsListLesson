@@ -28,10 +28,12 @@ export default function ContactsList(){
 
     return (
         <div className="tasks">
-            <input style={{width:"400px"}} onChange={(e) => handleInput(e.target.value)}/>
-            <button onClick={() => handleAddElement()}>
-                Add
-            </button>
+            <div className="createCardControll">
+                <input className="cardCreateInput borderedElement" onChange={(e) => handleInput(e.target.value)}/>
+                <button className="addButton borderedElement" onClick={() => handleAddElement()}>
+                    Add
+                </button>
+            </div>
             <div className="tasksList">
                 {toDoArray.map((element, id) => (
                     <Contact 
