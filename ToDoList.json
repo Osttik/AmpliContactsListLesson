@@ -15,6 +15,9 @@
         },{
             "toDoText": "Do something",
             "done": "false"
-        },
+        },{
+            "toDoText": "Do something",
+            "done": "false"
+        }
     ]
 }
