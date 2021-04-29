@@ -1,8 +1,6 @@
 export default function toDoMoqArray() { 
-    return [
-        {
-            toDoText: "Do something",
-            done: false
-        }
-    ]
+    const resp = fetch("https://raw.githubusercontent.com/Osttik/AmpliContactsListLesson/MoqData/ToDoList.json")
+    console.log(resp)
+    const array = resp.json();
+    return array
 }
